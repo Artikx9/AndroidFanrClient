@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    tools:context="com.example.artik.fanrclient.MainActivity">
+
+
+
+ <Button
+     android:layout_weight="1"
+    android:id="@+id/btnShowAll"
+     android:layout_height="70dp"
+     android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+     android:drawableLeft="@drawable/ic_list"
+     android:textColor="@color/white"
+    android:text="Показать рецепты"
+     android:paddingLeft="40dp"
+     android:textSize="16sp"
+     android:drawablePadding="25dp"
+     android:gravity="left|center_vertical"
+    />
+ <Button
+     android:layout_weight="1"
+     android:id="@+id/btnShowMy"
+     android:layout_height="70dp"
+     android:background="@color/pink"
+     android:layout_width="match_parent"
+     android:drawableLeft="@drawable/ic_list"
+     android:textColor="@color/white"
+     android:paddingLeft="40dp"
+     android:textSize="16sp"
+     android:drawablePadding="25dp"
+     android:gravity="left|center_vertical"
+     android:text="Показать мои рецепты"
+     />
+ <Button
+     android:layout_weight="1"
+     android:id="@+id/btnAdd"
+     android:layout_height="70dp"
+     android:background="@color/deeppurple"
+     android:layout_width="match_parent"
+     android:drawableLeft="@drawable/ic_add"
+     android:textColor="@color/white"
+     android:paddingLeft="40dp"
+     android:textSize="16sp"
+     android:drawablePadding="25dp"
+     android:gravity="left|center_vertical"
+     android:text="Добавить рецепт"
+     />
+
+ <Button
+     android:layout_weight="1"
+     android:id="@+id/btnMySaves"
+     android:layout_height="70dp"
+     android:background="@color/yello"
+     android:layout_width="match_parent"
+     android:drawableLeft="@drawable/ic_save"
+     android:textColor="@color/white"
+     android:paddingLeft="40dp"
+     android:textSize="16sp"
+     android:drawablePadding="25dp"
+     android:gravity="left|center_vertical"
+     android:text="Сохраненные рецепты"
+     />
+</LinearLayout>

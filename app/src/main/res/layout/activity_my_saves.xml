@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.artik.fanrclient.MySavesActivity">
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_height="70dp"
+        android:background="@color/yello"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_list"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:textSize="16sp"
+        android:drawablePadding="25dp"
+        android:gravity="left|center_vertical"
+        android:onClick="checkUpdate"
+        android:text="Check Update" />
+    <ListView
+        android:id="@+id/listMySaves"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

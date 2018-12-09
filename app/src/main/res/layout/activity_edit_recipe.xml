@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    tools:context="com.example.artik.fanrclient.EditRecipeActivity">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:hint="Name:"
+        android:textColorHint="@color/white">
+    <EditText
+        android:id="@+id/edtUpdName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailWrapper"
+        android:layout_width="match_parent"
+        android:hint="Component:"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white">
+    <EditText
+        android:id="@+id/edtUpdContent"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/coockingWrapper"
+        android:layout_width="match_parent"
+        android:hint="Coocking::"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white">
+
+    <EditText
+        android:id="@+id/edtUpdCook"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:textColor="@color/white"
+        android:ellipsize="end"/>
+    </android.support.design.widget.TextInputLayout>
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_height="70dp"
+        android:background="@color/deeppurple"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/ic_add"
+        android:textColor="@color/white"
+        android:paddingLeft="40dp"
+        android:textSize="16sp"
+        android:drawablePadding="25dp"
+        android:gravity="left|center_vertical"
+        android:text="Update Recipe"/>
+</LinearLayout>
